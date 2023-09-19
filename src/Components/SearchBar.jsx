@@ -1,5 +1,7 @@
 export default function SearchBar() {
     return (
-        <h1>SearchBar</h1>
+        <div>
+            <input type="text" placeholder="search for furniture" />
+        </div>
     )
 }

@@ -5,7 +5,7 @@ import { postings } from '../postings.js'
 export default function Gallery() {
     return (
         <div>
-            {postings.map((posting, index) => <Posting /> )}
+            {postings.map((posting, index) => <Posting data={posting} /> )}
         </div>
     )
 }

@@ -1,5 +1,10 @@
-export default function Posting() {
+export default function Posting(props) {
     return (
-        <h1>Posting</h1>
+        <div style={{"border": "2px solid black", "border-radius": "15px"}}>
+            <h2>{props.data.title}</h2>
+            <img src={props.data.imageURL} alt="props.data.title"></img>
+            <p>{props.data.description}</p>
+            <p>{props.data.price}</p>
+        </div>
     )
 }
